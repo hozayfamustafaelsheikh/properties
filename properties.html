@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties | EstatePro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="properties.html" class="active">Properties</a>
+    <a href="index.html#about">About Us</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a href="properties.html" class="btn btn-primary nav-btn">Explore Properties</a>
+</header>
+
+<main>
+  <section class="page-banner">
+    <div class="container">
+      <span class="eyebrow">FIND YOUR NEXT HOME</span>
+      <h1>Explore Our Properties</h1>
+      <p>Browse our collection of apartments, villas, and houses.</p>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="filters">
+      <div class="field">
+        <label for="filterType">Property Type</label>
+        <select id="filterType">
+          <option value="">All Types</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Villa">Villa</option>
+          <option value="House">House</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="filterLocation">Location</label>
+        <input id="filterLocation" type="text" placeholder="Search location">
+      </div>
+
+      <div class="field">
+        <label for="minPrice">Min Price (AED)</label>
+        <input id="minPrice" type="number" min="0" placeholder="Minimum">
+      </div>
+
+      <div class="field">
+        <label for="maxPrice">Max Price (AED)</label>
+        <input id="maxPrice" type="number" min="0" placeholder="Maximum">
+      </div>
+
+      <button class="btn btn-primary" id="filterButton">Apply Filters</button>
+      <button class="btn btn-outline" id="resetFilters">Reset</button>
+    </div>
+
+    <div class="results-heading">
+      <h2>Available Properties</h2>
+      <span id="resultsCount"></span>
+    </div>
+
+    <div class="property-grid" id="allProperties"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+    <p>© 2026 EstatePro. All rights reserved.</p>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
