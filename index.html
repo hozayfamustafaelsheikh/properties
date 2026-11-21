@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EstatePro | Find Your Dream Property</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a href="properties.html" class="btn btn-primary nav-btn">Explore Properties</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">FIND YOUR PLACE</span>
+      <h1>Find a Place<br>Where Life Happens.</h1>
+      <p>Discover exceptional properties and find the perfect place to call home.</p>
+      <a href="properties.html" class="btn btn-primary">Explore Properties</a>
+    </div>
+  </section>
+
+  <section class="search-section container">
+    <div class="search-box">
+      <div class="field">
+        <label for="homeType">Property Type</label>
+        <select id="homeType">
+          <option value="">All Types</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Villa">Villa</option>
+          <option value="House">House</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="homeLocation">Location</label>
+        <input id="homeLocation" type="text" placeholder="Enter location">
+      </div>
+
+      <div class="field">
+        <label for="homeMaxPrice">Maximum Price (AED)</label>
+        <input id="homeMaxPrice" type="number" min="0" placeholder="Any price">
+      </div>
+
+      <button class="btn btn-primary" id="homeSearch">Search</button>
+    </div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">OUR SELECTION</span>
+        <h2>Featured Properties</h2>
+        <p>Explore some of our most popular properties.</p>
+      </div>
+      <a href="properties.html" class="text-link">View All Properties →</a>
+    </div>
+
+    <div class="property-grid" id="featuredProperties"></div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container about-content">
+      <div>
+        <span class="eyebrow">ABOUT ESTATEPRO</span>
+        <h2>Helping You Find More Than Just a Property</h2>
+      </div>
+      <p>
+        We make finding your next home simple. Our team connects buyers,
+        sellers, and renters with properties that match their needs and lifestyle.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section container" id="contact">
+    <div>
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h2>Ready to Find Your Dream Property?</h2>
+      <p>Talk to our team and let us help you find the right property.</p>
+    </div>
+    <a href="mailto:info@estatepro.com" class="btn btn-primary">Contact Us</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+    <p>© 2026 EstatePro. All rights reserved.</p>
+    <div>
+      <a href="properties.html">Properties</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
