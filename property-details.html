@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | EstatePro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="properties.html" class="active">Properties</a>
+    <a href="index.html#about">About Us</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a href="properties.html" class="btn btn-primary nav-btn">Explore Properties</a>
+</header>
+
+<main class="container section">
+  <div id="propertyDetails">
+    <p>Loading property...</p>
+  </div>
+
+  <section class="inquiry-section" id="inquiry">
+    <div>
+      <span class="eyebrow">INTERESTED?</span>
+      <h2>Send an Inquiry</h2>
+      <p>Complete the form and our team will contact you.</p>
+    </div>
+
+    <form id="inquiryForm" class="inquiry-form">
+      <input type="hidden" id="inquiryPropertyId">
+
+      <div class="field">
+        <label for="inquiryName">Full Name</label>
+        <input id="inquiryName" type="text" required placeholder="Your name">
+      </div>
+
+      <div class="field">
+        <label for="inquiryEmail">Email Address</label>
+        <input id="inquiryEmail" type="email" required placeholder="Your email">
+      </div>
+
+      <div class="field">
+        <label for="inquiryPhone">Phone Number</label>
+        <input id="inquiryPhone" type="tel" required placeholder="Your phone">
+      </div>
+
+      <div class="field">
+        <label for="inquiryMessage">Message</label>
+        <textarea id="inquiryMessage" rows="4" placeholder="I'm interested in this property..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+      <p id="inquiryFeedback" class="form-feedback" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <a href="index.html" class="logo">Estate<span>Pro.</span></a>
+    <p>© 2026 EstatePro. All rights reserved.</p>
+    <div><a href="index.html">Home</a><a href="properties.html">Properties</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
